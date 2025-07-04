@@ -1,18 +1,8 @@
-import path from 'path';
-import { fileURLToPath, pathToFileURL } from 'url';
+import stops from '../data/stops.js';
 import { getRoute } from '../utils/getRoute.js';
 
-// Convert import.meta.url to __dirname equivalent
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Convert Windows path to valid file:// URL
-const stopsPath = path.join(__dirname, '../data/stops.js');
-const stops = (await import(pathToFileURL(stopsPath).href)).default;
-
-
 // 🔐 Paste your API key here
-const API_KEY = 'placeholder for API key';
+const API_KEY = 'placeholder';
 
 async function generatePaths() {
   const paths = [];
