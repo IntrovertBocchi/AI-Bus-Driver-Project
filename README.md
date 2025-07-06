@@ -50,6 +50,7 @@ Unlike traditional bus apps, this simulation models public buses as **polite, re
 ---
 
 ## Project Structure Overview
+```
 ├── public/
 │ └── Bus.png # Custom bus icon
 ├── src/
@@ -61,6 +62,8 @@ Unlike traditional bus apps, this simulation models public buses as **polite, re
 │ ├── App.js # Main app logic and state
 │ └── App.css # Styling
 ├── README.md
+```
+---
 
 ## Setup Instructions
 ```
@@ -75,11 +78,13 @@ npm install
 npm start
 ```
 
+---
 ## Requirements
 1. Node.js
 2. NPM
 3. OpenRouteService API key (only needed if regenerating routes)
 
+---
 ## How Bus Movement Works
 Each bus:
 
@@ -88,6 +93,7 @@ Each bus:
 - Once it reaches the end of a segment, it stops at the next station for 3 minutes
 - Then continues to the next segment (loops at end)
 
+---
 ## Future Plans
 Passenger simulation (boarding / alighting)
 
@@ -96,9 +102,11 @@ Passenger simulation (boarding / alighting)
 3. Weather and traffic impact simulation
 4. Deploy live with a backend
 
+---
 ## Disclaimer
 This project is intended for educational and personal development. It's not affiliated with any public transport authority in Malaysia. No harm or offense is intended — it's a creative, exploratory attempt to simulate a better, more humane bus experience.
 
+---
 ## Contact
 Built by @IntrovertBocchi
 For questions or collaboration, feel free to open an issue or pull request.
